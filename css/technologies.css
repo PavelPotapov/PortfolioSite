@@ -1,0 +1,37 @@
+.technologies {
+	color:var(--color-dark-second );
+}
+
+.technologies__content {
+	display: flex;
+	align-items: center;
+	gap: calc(100% / 4)
+}
+
+.technologies__hr {
+	background-color: var(--color-dark-second);
+	height: 1px;
+}
+
+.technologies__title {
+    margin-top: 0px;
+}
+
+.technologies__list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.technologies__list li:not(:first-child){
+    margin-top: 15px;
+}
+
+.technologies__list li {
+    padding: 0 5px;
+}
+
+.technologies__list li:hover{
+    background-color: var(--color-light-main);
+    border-radius: 5px;
+    cursor: pointer;
+}

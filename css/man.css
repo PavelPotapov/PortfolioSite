@@ -1,0 +1,11 @@
+.man {
+    width: 38px;
+    height: 96px;
+    background-image: url("../img/image.png");
+    background-position: 0px, 38px;
+    position: absolute;
+}
+
+.man-scale {
+    transform: scale(-1, 1);
+}

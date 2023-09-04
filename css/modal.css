@@ -1,0 +1,71 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.modal--active {
+    display: block;
+}
+
+.mus {
+    width: 250px;
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 35px;
+    background-color: var(--color-light-second);
+    border-radius: 20px;
+
+}
+
+#vkwidget1 {
+    border-radius: 25px;
+}
+
+.cross {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-color: var(--color-light-main);
+    right: 5px;
+    top: 5px;
+    border-radius: 20px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.cross:hover {
+    background-color: var(--color-dark-main);
+}
+
+.cross::before,
+.cross::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    background-color: var(--color-light-second);
+}
+
+
+.cross::before {
+    top: 45%;
+    left: 20%;
+    transform: rotate(-45deg);
+}
+
+.cross::after {
+    top: 45%;
+    left: 20%;
+    transform: rotate(45deg);
+}
+
+
+

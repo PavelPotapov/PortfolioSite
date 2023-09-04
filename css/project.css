@@ -1,0 +1,14 @@
+.project__content {
+	background-color: var(--color-light-second);
+	border-radius: 20px;
+	padding: 20px;
+	color: var(--color-dark-second);
+	z-index: 100;
+	min-height: 100px;
+	line-height: 35px;
+}
+
+.project {
+	z-index: 1;
+	position: relative;
+}

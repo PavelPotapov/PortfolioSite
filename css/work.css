@@ -1,0 +1,88 @@
+.work {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+.work__content {
+	background-color: var(--color-light-second);
+	border-radius: 20px;
+	padding: 20px;
+	color: var(--color-dark-second);
+    
+}
+
+.work__content a {
+	text-decoration: none;
+    color: var(--color-dark-second);
+}
+
+.work__content img {
+	width: 15px;
+	height: 15px;
+}
+
+.download-resume {
+	cursor: pointer;
+	color: var(--color-dark-second);
+    padding: 20px;
+    width: 200px;
+    border: 2px solid;
+    border-radius: 20px;
+    margin-bottom: 50px;
+
+}
+
+.download-resume:active {
+    outline: 1px solid red;
+}
+
+.download-resume a:active {
+	color: var(--color-dark-main);
+}
+
+.work__container {
+
+}
+
+.work__list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.work__item {
+    min-height: 150px;
+    border-left: 2px solid var(--color-dark-main);
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 50px;
+
+}
+
+.work__item:before{
+    position:absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-light-main);
+    border-radius: 100%;
+    left: -12px;
+    top: -10px;
+    border: 1px solid var(--color-dark-main);
+}
+
+.work__title {
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.work__role {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+

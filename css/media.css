@@ -1,0 +1,176 @@
+@media (max-width: 375px) {
+
+    .html,
+    body {
+        overflow-x: hidden;
+    }
+
+    #movePicture {
+        overflow-x: hidden;
+    }
+
+    .main {
+        overflow-x: hidden;
+    }
+
+    .block {
+        margin: 0;
+    }
+
+
+    .home {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "aboutMe"
+            "theme"
+            "technologies"
+            "weather"
+            "tg"
+            "mail"
+            "git"
+            "music"
+            "discord";
+    }
+
+    .theme {
+        grid-area: theme;
+        width: 95vw;
+    }
+
+    .aboutMe {
+        grid-area: aboutMe;
+        color: var(--color-dark-second);
+        width: 95vw;
+    }
+
+    .technologies {
+        grid-area: technologies;
+        width: 95vw;
+    }
+
+    .music {
+        grid-area: music;
+        width: 95vw;
+    }
+
+    .weather {
+        grid-area: weather;
+        width: 95vw;
+    }
+
+    .git {
+        grid-area: git;
+        width: 95vw;
+    }
+
+    .mail {
+        grid-area: mail;
+        width: 95vw;
+    }
+
+    .telegram {
+        grid-area: tg;
+        width: 95vw;
+    }
+
+    .discord {
+        grid-area: discord;
+        width: 95vw;
+    }
+
+    .technologies__content {
+        gap: 55px;
+    }
+
+    .mus {
+        top: 340px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 1024px) {
+
+    .html,
+    body {
+        overflow-x: hidden;
+    }
+
+    #movePicture {
+        overflow-x: hidden;
+    }
+
+    .main {
+        overflow-x: hidden;
+    }
+
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "aboutMe aboutMe"
+            "theme weather"
+            "technologies technologies"
+            "tg music"
+            "git mail"
+            "discord discord";
+    }
+
+    .aboutMe {
+        grid-area: aboutMe;
+        width: 95vw;
+    }
+
+    .weather {
+        grid-area: weather;
+        width: calc(88vw / 2);
+    }
+
+    .theme {
+        grid-area: theme;
+        width: calc(88vw / 2);
+    }
+
+    .music {
+        grid-area: music;
+        width: calc(88vw / 2);
+    }
+
+    .git {
+        grid-area: git;
+        width: calc(88vw / 2);
+    }
+
+    .technologies {
+        grid-area: technologies;
+        width: 95vw;
+    }
+
+    .mail {
+        grid-area: mail;
+        width: calc(88vw / 2);
+    }
+
+    .telegram {
+        grid-area: tg;
+        width: calc(88vw / 2);
+    }
+
+    .discord {
+        grid-area: discord;
+        width: 95vw;
+    }
+
+    .toggle_theme_checker--circle--right {
+        transform: translate(85px, 10px);
+    }
+
+
+    .mus {
+        top: 340px;
+    }
+}
+

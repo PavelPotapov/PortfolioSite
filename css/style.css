@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap");
+
+:root {
+	--color-light-main: #e5e0ff;
+	--color-light-second: #fff2f2;
+	--color-dark-main: #555485;
+	--color-dark-second: #6867ac;
+}
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: var(--color-light-main);
+	font-family: "Roboto Mono", monospace;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.light {
+	--color-light-main: #e5e0ff;
+	--color-light-second: #fff2f2;
+	--color-dark-main: #555485;
+	--color-dark-second: #6867ac;
+}
+
+.dark {
+	--color-light-main: #555485;
+	--color-light-second: #6867ac;
+	--color-dark-main: #fff2f2;
+	--color-dark-second: #e5e0ff;
+}
+
+/*main section*/
+.main {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 20px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	z-index: 1;
+	position: relative;
+}
+
+.menu__list {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	gap: 30px;
+	background-color: var(--color-light-second);
+	max-width: 350px;
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+
+.menu__item {
+	padding: 10px;
+	border-radius: 20px;
+	color: var(--color-dark-second);
+}
+
+.menu__item:hover {
+	background-color: var(--color-light-main);
+	cursor: pointer;
+}
+
+.menu__item--home--active {
+	background-color: var(--color-light-main);
+}
+
+.menu__item--work--active {
+	background-color: var(--color-light-main);
+}
+
+.menu__item--project--active {
+	background-color: var(--color-light-main);
+}
+
+.home {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	position: relative;
+}
+
+.block {
+	background-color: var(--color-light-second);
+	border-radius: 20px;
+	padding: 15px 10px;
+	height: 200px;
+	margin: 5px;
+	transition: transform 0.2s linear;
+	position: relative;
+	overflow: hidden;
+}
+
+.block-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.block:hover {
+	transform: scale(1.015);
+}
+
+/* grid */
+.home {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		"aboutMe aboutMe aboutMe theme"
+		"technologies technologies music weather"
+		"git mail tg discord";
+}
+
+.theme {
+	grid-area: theme;
+}
+
+.aboutMe {
+	grid-area: aboutMe;
+	color: var(--color-dark-second);
+}
+
+.technologies {
+	grid-area: technologies;
+}
+
+.music {
+	grid-area: music;
+}
+
+.weather {
+	grid-area: weather;
+}
+
+.git {
+	grid-area: git;
+}
+
+.mail {
+	grid-area: mail;
+}
+
+.vk {
+	grid-area: tg;
+}
+
+.discord {
+	grid-area: discord;
+}
+
+.aboutMe__title {
+	font-weight: bold;
+}
+
+.discord {
+	background-color: #6d67e4;
+	opacity: 0.9;
+}
+
+.discord img {
+	width: 200px;
+	height: 200px;
+}
+
+.telegram {
+	background-color: #40b3e0;
+	opacity: 0.9;
+}
+
+.telegram img {
+	width: 180px;
+	height: 180px;
+}
+
+.git {
+	background-color: #41444b;
+	opacity: 0.9;
+}
+
+.git img {
+	width: 180px;
+	height: 180px;
+}
+
+.mail {
+	background-color: #cda0a0;
+	opacity: 0.9;
+}
+
+.mail img {
+	width: 200px;
+	height: 200px;
+}
+
+.music {
+	background-image: url("../img/i.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.9;
+}
+
+.link__icon {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	transform: rotate(-45deg);
+	color: #fff2f2;
+}
+
+.animation__play {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
+}
+
+.animation__img {
+	width: 80%;
+}
+
+.animation__title {
+	color: var(--color-dark-second);
+	display: block;
+	text-align: center;
+}
+
+.bi-play-circle {
+	display: block;
+	fill: var(--color-dark-second);
+	cursor: pointer;
+}
+
+.text-link {
+	text-decoration: none;
+	font-weight: bold;
+}
+.text-link:after {
+	display: inline-block;
+	content: " ";
+	background-image: url("../img/arrow2.svg");
+	height: 15px;
+	width: 15px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.icon {
+	vertical-align: top;
+}
+
